@@ -1,0 +1,47 @@
+/* z-index in CSS is used to control the stacking order of 
+elements that overlap each other.
+Elements with higher z-index values are displayed in front of those with lower values. */
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    z-index:1;
+}
+.box2 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    z-index: 2;
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    z-index: 3;
+}
+/* box3 overlaps on box2, box2 overlaps on box1 */
+ .poet {
+    position: relative; /* parent is reference*/
+    display: inline-block;
+} 
+.poet img {
+    width: 600px;
+    height: 600px;
+    display: block;
+}
+.poet p{
+    top: 0; /* stick to top of image */
+    position: absolute; /* now it will overlap */
+    z-index:1;
+    font-size: 30px;
+    color: rgb(242, 238, 238);
+}
