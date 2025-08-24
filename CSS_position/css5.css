@@ -1,0 +1,97 @@
+h1 {
+    color: blue;
+    font-size: 40px;
+}
+/*position: relative*/
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(88, 70, 70);
+    color: white;
+    font-size: 40px;
+}
+.relative {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 120%; /* moves 20px down */
+    left: 70px; /* moves 20px right */
+}
+/* The element is positioned relative to its own normal position.
+It remains in the document flow (does not affect siblings).
+top,left,right,bottom property can be applied
+The offsets (top, left, right, bottom) move it from where it would normally be.
+Other elements still consider it in its original position.
+The relative box moves down and right from its normal spot.
+BUT, its original space is still reserved → other boxes don’t move into that gap. */
+
+/* position: absolute */
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(206, 221, 212);
+    color: white;
+    font-size: 40px;
+}
+.absolute {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(121, 20, 64);
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 120%; /* moves 20px top */
+    left: 70px; /* moves 20px from left */
+}
+/* The element is positioned relative to the nearest ancestor with position (not static).
+If no such ancestor exists, it is positioned relative to the <html> (page itself).
+It is removed from the normal document flow → other elements act like it doesn’t exist.
+Used often inside relative containers.
+The absolute box is placed 20px from the top and 30px from the left of its container.
+It does not reserve space → it sits on top of other content. */
+.box2 {
+    background-color: yellow;
+    position: relative;
+}
+.absolute1 {
+    background-color: black;
+    color: white;
+    font-size: 80px;
+    position: absolute;
+}
+
+.box3 {
+    background-color: aqua;
+    padding-top: 10%;
+    width: 150px;
+    height: 100px;
+    border: 12px solid black;
+    /* top: 30px;  doesn't work*/
+}
+/* . static (default)
+This is the default for all elements.
+Elements are placed in the normal document flow.
+top, left, right, bottom do not work here. */
+
+
+.box4 {
+    position: fixed; 
+    background-color: pink;
+    border: 10px solid purple;
+    width: 150px;
+    height: 100px;
+    top: 30px;
+    left: 50%;
+}
+/* position: fixed
+Positioned relative to the browser window (viewport).
+Does not move when the page is scrolled.
+Commonly used for navbars, buttons, sticky ads.
+Fixed elements are pinned to the viewport (browser window).
+They do not move when you scroll.
+The properties top, right, bottom, left control where it is fixed.
+If you apply the same top and left to multiple fixed elements, they will overlap.
+To avoid this, give different top values (like I did above for ECE and ISE). */
