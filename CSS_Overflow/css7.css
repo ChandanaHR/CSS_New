@@ -1,0 +1,14 @@
+/* In CSS, the overflow property controls what happens when the content inside an 
+element is too large to fit in its container (box). */
+.container {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: clip;
+        }
+/* overflow-hidden: Extra content is clipped and not visible */
+/* overflow: visible: Content is not clipped and may overflow outside the element. */
+/* overflow: scroll: Always adds scrollbars (horizontal/vertical) even if not needed. */
+/* We can specify overflow-x, overflow-y */
+/* overflow: auto :Scrollbars appear only when content overflows. */
+/* overflow: clip Similar to hidden, but prevents scrolling (no scrollbars). */
