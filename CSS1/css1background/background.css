@@ -1,0 +1,31 @@
+/* background-color property specifies the background color of an element. */
+    /* opacity property specifies the opacity/transparency of an element. 
+    It can take a value from 0.0 - 1.0 */
+/* background-image: specifies an image to use as the background of an element. */
+    /* background-size: cover covers an entire image in background */
+/* background-repeat: The background-repeat property sets if/how a background image will be repeated.
+    values: repeat=> repeats both horizontally and vertically.
+            repeat-x => Repeats only horizontally (x-axis)
+            repeat-y => Repeats only vertically (y-axis)
+            no-repeat => Displays the image only once (no tiling).
+            space => Repeats the image as many times as possible without clipping; extra space is distributed evenly between images.
+            round => Repeats the image, but resizes it so that it fits perfectly without clipping. */
+/* background-position: set the starting position of the background image.
+    left top
+    left center
+    left bottom
+    center top
+    center center (or just center)
+    center bottom
+    right top
+    right center
+    right bottom
+    x= 50px, y=20px */
+/* background-attachment: specifies whether the background image should scroll or be fixed 
+    values: fixed, scroll */
+body {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8.jpg");
+    background-repeat: space;
+    background-position: 50px 30px;
+    background-attachment: scroll;
+}

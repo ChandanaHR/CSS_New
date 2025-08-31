@@ -1,0 +1,14 @@
+/* CSS margin properties are used to create space around elements, outside of any defined borders. */
+    /* margin-top - sets the top margin of an element
+    margin-right - sets the right margin of an element
+    margin-bottom - sets the bottom margin of an element
+    margin-left - sets the left margin of an element */
+    /* margin with 3 values: top, right and left, bottom */
+    /* margin with 2 values: top and bottom, right and left */
+.margin {
+    background-color: white;
+    color: black;
+    border: 20px solid black;
+    width: 260px;
+    margin-top: 50px;
+}

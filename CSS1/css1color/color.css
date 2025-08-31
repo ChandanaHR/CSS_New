@@ -1,0 +1,35 @@
+/* RGB: An RGB color value represents RED, GREEN, and BLUE light sources. */
+    /* intensity of the color between 0 and 255.
+    rgb(0,0,255), rgb(255,0,0), rgb(0,255,0) */
+    /* RGBA => Alpha value: alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all): */
+.rgb {
+    width: 50%;
+    height: 230px;
+    /* background-color: rgb(255,0,0); */
+    background-color: rgba(0,255,0,0.1);
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+/* HEX: A hexadecimal color is specified with: #RRGGBB.
+In CSS, a color can be specified using a hexadecimal value in the form:
+    values: 00 and ff */
+.hex {
+    width: 50%;
+    height: 230px;
+    background-color: #0000ff;
+    text-align: center;
+}
+/* HSL: HSL stands for hue, saturation, and lightness.
+    Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+    Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+    ightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+    hsla  - alpha value - opacity of color */
+.hsl {
+    width: 50%;
+    height: 230px;
+    /* background-color: hsl(120, 100%, 50%); */
+    background-color: hsla(120,100%, 50%, 0.6);
+    text-align: center;
+}

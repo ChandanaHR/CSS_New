@@ -1,0 +1,30 @@
+/* An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". */
+/* outline-style property specifies the style of the outline, and can have one of the following values:
+    dotted - Defines a dotted outline
+    dashed - Defines a dashed outline
+    solid - Defines a solid outline
+    double - Defines a double outline
+    groove - Defines a 3D grooved outline
+    ridge - Defines a 3D ridged outline
+    inset - Defines a 3D inset outline
+    outset - Defines a 3D outset outline
+    none - Defines no outline
+    hidden - Defines a hidden outline */
+/* outline-width property specifies the width of the outline */
+/* outline-color property is used to set the color of the outline. */
+/* outline property is a shorthand property for setting the following individual outline properties:
+    outline-width, outline-style, outline-color */
+/* The outline-offset property adds a space between an outline 
+    and the edge/border of an element */
+.outline {
+    background-color: yellowgreen;
+    color: purple;
+    margin-top: 50px;
+    border: 10px solid purple;
+    width: 450px;
+    margin-left: 50px;
+    outline-style: inset;
+    outline-width: 50px;
+    outline-color: pink;
+    outline-offset: 30px;
+}
