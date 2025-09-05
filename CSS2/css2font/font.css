@@ -1,0 +1,25 @@
+/* font-family: 
+Serif fonts - have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+Sans-serif fonts - have clean lines (no small strokes attached). They create a modern and minimalistic look.
+Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.
+Cursive fonts - imitate human handwriting.
+Fantasy fonts - are decorative/playful fonts. 
+font.google.com*/
+/* font-style property specifies the font style for a text..
+    value: oblique */
+/* font-weight property specifies how thick or thin characters in text should be displayed.
+    normal - This is default. Defines normal characters
+    bold - Defines thick characters
+    bolder - Defines thicker characters
+    lighter - Defines lighter characters
+    100-900 - Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold */
+/* font-variant property specifies whether or not a text should be displayed in a small-caps font.
+    values: small-caps */
+/* font-size property is used to specify the size of the text/font. */
+h1 {
+    font-family: "Story Script", sans-serif;
+    font-style: oblique;
+    font-weight: 800;
+    font-variant: small-caps;
+    font-size: 50px;
+}

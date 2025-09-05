@@ -1,0 +1,48 @@
+/* display: block
+    Takes full width and always starts on a new line. */
+h1 {
+    width: 110px;
+    height: 60px;
+    color: white;
+    background-color: blue;
+}
+.block {
+    display: block;
+    background-color: blueviolet;
+}
+/* display: inline
+    Takes only as much space as its content, sits in line with text */
+    /* but we can't set width and height */
+/* .inline {
+    display: inline;
+    background-color: black;
+}  wont work bcz h1 are block level elements*/
+.inline h1 {
+    display: inline;
+    background-color: black;
+    /* width: 500px;
+    height: 500px; */
+}
+
+/* display: inline-block
+    Acts like inline (sits side by side).
+    But also behaves like block (you can set width, height, margin, and padding fully). */
+.inlineblock  {
+    display: inline-block;
+    width: 500px;
+}
+
+/* Inline
+Does not start on a new line → sits next to other inline elements.
+Takes up only as much width as the content needs.
+You cannot set width/height (only padding/margin left & right works).
+Examples: <span>, <a>, <strong>. */
+/* Block
+Always starts on a new line.
+Stretches to take the full width of its container (even if content is small).
+You can set width, height, margin, and padding.
+Examples: <div>, <p>, <h1>, <section>. */
+/* Inline-block
+Stays inline (so sits side by side).
+But you can set width, height, margin, and padding like a block.
+It’s a hybrid between block and inline. */

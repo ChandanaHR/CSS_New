@@ -1,0 +1,62 @@
+/* color property is used to set the color of the text. */
+/* text-align property is used to set the horizontal alignment of a text.
+    values: left,right,center, justify */
+/* text-align-last property specifies how to align the last line of a text.
+    auto - Default value. The last line is justified and aligned left
+    left - The last line is aligned to the left
+    right - The last line is aligned to the right
+    center - The last line is center-alignedt
+    justify - The last line is justified as the rest of the lines
+    start - The last line is aligned at the start of the line
+    end - The last line is aligned at the end of the line */
+/* vertical-align property sets the vertical alignment of an element.
+    baseline - Default value. The element is aligned with the baseline of the parent
+    length/% - Raises or lower an element by the specified length or percent
+    sub - The element is aligned with the subscript baseline of the parent
+    super - The element is aligned with the superscript baseline of the parent
+    top - The element is aligned with the top of the tallest element on the line
+    text-top - The element is aligned with the top of the parent element's font
+    middle - The element is placed in the middle of the parent element
+    bottom - The element is aligned with the lowest element on the line
+    text-bottom - The element is aligned with the bottom of the parent element's font */
+/* text-decoration: 
+    text-decoration-line property sets the type of decoration line added to the text.
+        values: none,underline,overline,line-through */
+    /* text-decoration-color
+    text-decoration-style property is used to set the style of the decoration line.
+        values: solid - Default value. Displays the line as a single line
+        double - Displays the line as a double line
+        dotted - Displays the line as a dotted line
+        dashed - Displays the line as a dashed line
+        wavy - Displays the line as a wavy line */
+    /* text-decoration-thickness property is used to set the thickness of the decoration line. */
+/* text-transform property is used to control the capitalization of text in an element.
+    values:none,capitalize,lowercase,uppercase */
+/* text-spacing: 
+    text-indent property is used to specify the indentation of the first line in a text-block.
+    letter-spacing property is used to specify the space between the characters in a text.
+    line-height property is used to specify the space between lines.
+    word-spacing property is used to specify the space between the words in a text.
+    white-space property specifies how white-space inside an element is handled.
+        normal
+        nowrap
+        pre
+        pre-line
+        pre-wrap */
+/* text-shadow property adds shadow to text.
+In its simplest use, you only specify the horizontal and the vertical shadow.
+    horizontal,vertical,blur effect,color */
+h1 {
+    color: green;
+    text-align: center;
+    text-shadow: 30px 40px;
+}
+p{
+    color: red;
+    text-align-last: center;
+    vertical-align: super;
+    text-decoration-line: overline;
+    /* text-decoration-style: double;
+    text-decoration-thickness: 10px; */
+    text-indent: 30px;
+}

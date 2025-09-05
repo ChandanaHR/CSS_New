@@ -1,0 +1,44 @@
+/* the cursor property controls how the mouse pointer looks when hovering over an element. */
+/* Links and actions
+    pointer → Hand icon (used for links, buttons).
+    context-menu → Context menu available (usually a menu cursor).
+    help → Question mark/help available.
+    progress → Arrow with spinning circle (operation in progress, but UI still usable).
+    wait → Loading (UI not usable). */
+.box {
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 50px;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+.default {
+    cursor: default;
+}
+.pointer {
+    cursor: pointer;
+}
+.crosshair {
+    cursor: crosshair;
+}
+.eresize {
+    cursor: e-resize; /*Resize right */
+}
+.wresize {
+    cursor:w-resize; /*Resize left*/
+}
+.neresize {
+    cursor: ne-resize;
+}
+.nwresize {
+    cursor: nw-resize;
+}
+.progress {
+    cursor: progress;
+}
+.sresize {
+    cursor: s-resize;
+}

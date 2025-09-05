@@ -1,0 +1,38 @@
+/* border-spacing property sets the distance between the borders of adjacent cells. */
+/* horizontal dividers for a table, add the border-bottom property to <th> and <td> elements: */
+/* zebra stripes: even and odd colors */
+/* Use the CSS :hover selector on <tr> to highlight table rows on mouse over: */
+table {
+    border-style: solid;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    width: 50%;
+    height: 100px;
+}
+th {
+    border-style: dotted;
+    padding: 20px;
+    border-spacing: 20px;
+    text-align: center;
+    border-bottom: 20px solid green;
+}
+td {
+    border-style: dashed;
+    padding: 20px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: blue;
+    color: white;
+}
+th:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+td:hover {
+    background-color: blueviolet;
+}
+/* Table alignment:    
+    text-align property is used to set the horizontal 
+    alignment of the content in <th> or <td>.
+    values: left,right,center */
