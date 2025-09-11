@@ -1,0 +1,13 @@
+/* overflow property controls what happens to content that is too big to fit into an area. */
+/* overflow is visible, meaning that it is not clipped and it renders outside the element's box: */
+/* hidden value, the overflow is clipped, and the rest of the content is hidden: */
+/* scroll value, horizontal and vertical scrollbars are always added. User must scroll to see all content: */
+/* overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically */
+.overflow {
+    width: 90px;
+    height: 70px;
+    background-color: rgb(167, 237, 38);
+    color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

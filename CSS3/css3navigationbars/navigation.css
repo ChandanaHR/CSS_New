@@ -1,0 +1,44 @@
+.vertical {
+    list-style-type: none;
+    width: 300px;
+    background-color: rgb(185, 235, 185);
+    border: 10px solid black;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block;
+    color: blue;
+    padding: 40px;
+    font-size: 40px;
+}
+li{
+    text-align: center;
+    border: 10px solid black;
+}
+li a:hover {
+    background-color: blue;
+    color:white;
+}
+li:last-child {
+    background-color: brown;
+}
+
+.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.horizontal li {
+    float: left;
+}
+
+/* .horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    display: flex;
+} */

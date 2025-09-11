@@ -1,0 +1,68 @@
+/* pseudo-element is a keyword that can be added to a selector, to style a specific part of an element. */
+/* Style the first letter or first line, of an element
+Insert content before or after an element
+Style the markers of list items
+Style the user-selected portion of an element
+Style the viewbox behind a dialog box */
+/* selector::pseudo-element-name {
+    CSS properties
+} */
+
+ /* ::first-line pseudo-element is used to add a special style to the first line of a text. */
+ /* can be applied to only block level elements */
+ p::first-line {
+    color: red;
+    font-variant: small-caps;
+    font-size: 40px;
+ }
+
+ /* ::first-letter pseudo-element is used to add a special style to the first letter of a text. */
+ /* can be applied to only block level elements */
+ p::first-letter {
+    color: green;
+    font-size: 50px;
+ }
+
+ /* ::before pseudo-element is used to insert some content before the content of a specified element.
+Use the content property to specify the content to insert. */
+h1::before {
+    content: url("https://cdn.britannica.com/56/148856-004-2F59E2D9/APJ-2008.jpg")
+}
+
+/* ::after pseudo-element is used to insert some content after the content of a specified element.
+Use the content property to specify the content to insert.  */
+h1::after {
+    content:url("https://m.media-amazon.com/images/I/513GqVPouZL._UF1000,1000_QL80_.jpg")
+} 
+
+/* h1::after {
+    content: "";
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("https://m.media-amazon.com/images/I/513GqVPouZL._UF1000,1000_QL80_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* ::marker pseudo-element is used to style the list item markers. */
+::marker {
+    color: lightblue;
+    font-size: 60px;
+}
+
+/* ::selection pseudo-element is used to style the part of a text that is selected by a user. */
+/* color
+background
+background-color
+text-shadow
+cursor  only these are allowed*/
+::selection {
+    color: rgb(234, 234, 6);
+    background-color: rgb(25, 32, 228);
+}
+
+/*opacity: transparency 0.0 to 1.0 */
+img:hover {
+    opacity: 0.5;
+}

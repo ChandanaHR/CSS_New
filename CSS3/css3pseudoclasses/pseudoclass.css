@@ -1,0 +1,54 @@
+/* CSS pseudo-class is a keyword that can be added to a selector, to define a style for a special state of an element. */
+/* Style an element when a user moves the mouse over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+Style valid/invalid/required/optional form elements
+Style an element that is the first child of its parent */
+/* Syntax:
+    selector: pseudo class name {
+        css properties
+    } */
+
+    /*Pseudo classes used on Links*/
+a{
+    font-size: 40px;
+}
+a:link {
+    color: pink;
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: brown;
+}
+
+.formfocus input {
+    width: 50%;
+    height: 40px;
+}
+
+input:focus {
+    background-color: aqua;
+}
+
+.child {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+.parent .child{
+    display: none; /*hides img and p*/
+}
+
+.parent:hover .child {
+    display: block /*displays the content that is hidden*/
+}
+
+p:first-child {
+    color: red;
+    font-size: 60px;
+}
