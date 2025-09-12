@@ -78,7 +78,7 @@ top, left, right, bottom do not work here. */
 
 
 .box4 {
-    position: fixed; 
+    position:sticky; 
     background-color: pink;
     border: 10px solid purple;
     width: 150px;

@@ -14,9 +14,13 @@ font-size, font-weight, font-family, etc.). */
 } */
 
 /* text-decoration property is mostly used to remove underlines from links: */
+a:link {
+    color: purple;
+    font-size: 60px;
+}
 a:visited {
     color: green;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 a:hover {
     color: blue;

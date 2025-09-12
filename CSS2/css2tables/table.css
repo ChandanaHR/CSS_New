@@ -22,7 +22,7 @@ td {
     text-align: center;
 }
 tr:nth-child(even) {
-    background-color: blue;
+    background-color: rgb(70, 212, 13);
     color: white;
 }
 th:nth-child(odd) {

@@ -1,8 +1,8 @@
 /* display: block
     Takes full width and always starts on a new line. */
 h1 {
-    width: 110px;
-    height: 60px;
+    /* width: 110px;
+    height: 60px; */
     color: white;
     background-color: blue;
 }
@@ -17,7 +17,7 @@ h1 {
     display: inline;
     background-color: black;
 }  wont work bcz h1 are block level elements*/
-.inline h1 {
+.inline {
     display: inline;
     background-color: black;
     /* width: 500px;
@@ -27,7 +27,7 @@ h1 {
 /* display: inline-block
     Acts like inline (sits side by side).
     But also behaves like block (you can set width, height, margin, and padding fully). */
-.inlineblock  {
+.inlineblock h1 {
     display: inline-block;
     width: 500px;
 }

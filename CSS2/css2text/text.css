@@ -49,14 +49,18 @@ In its simplest use, you only specify the horizontal and the vertical shadow.
 h1 {
     color: green;
     text-align: center;
-    text-shadow: 30px 40px;
+    text-shadow: 25px 20px 5% purple;
 }
 p{
     color: red;
     text-align-last: center;
     vertical-align: super;
-    text-decoration-line: overline;
-    /* text-decoration-style: double;
-    text-decoration-thickness: 10px; */
-    text-indent: 30px;
+    /* text-decoration-line: line-through;
+    text-decoration-style: double; */
+    /* text-decoration-thickness: 10px;  */
+    text-transform: uppercase;
+    text-indent: 50px; 
+    letter-spacing: 40px;
+    line-height: 40px;
+    word-spacing: 20px;
 }

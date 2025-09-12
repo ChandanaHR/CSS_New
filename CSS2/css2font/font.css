@@ -18,7 +18,7 @@ font.google.com*/
 /* font-size property is used to specify the size of the text/font. */
 h1 {
     font-family: "Story Script", sans-serif;
-    font-style: oblique;
+    /* font-style: oblique; */
     font-weight: 800;
     font-variant: small-caps;
     font-size: 50px;
