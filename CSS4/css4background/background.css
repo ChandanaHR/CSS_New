@@ -1,0 +1,49 @@
+/* Allows us to add mutliple backgrounds */
+/* background shorthand property
+    first image position repeat, second image position repeat */
+/* background-size: first value,second value 
+    width of image, height of image 
+    auto value is the default value, and displays the background image in its original size.
+    cover: Scales the background image so it completely covers the element.
+    The image is cropped if necessary (no empty space).*/
+    /* contain: Scales the background image so it is fully visible inside the element.
+    The entire image fits, but there may be empty space */
+/* background-origin:decides where the background image starts painting from (the reference box).
+    border-box: Background image starts from the outer border edge. */
+    /* padding-box: Background image starts from the inside edge of the border (padding area).
+    content-box: Background image starts only from the content area (ignores padding + border). */
+/* background-clip: how far the background-image should extend
+    values: border-box,padding-box,content-box */
+ .background1 {
+    width: 1800px;
+    height: 800px; 
+    background-image: url('https://media.istockphoto.com/id/172154652/photo/red-rose.jpg?s=612x612&w=0&k=20&c=enfBM8lpOIQoKVBn-WH-lV9XrTgHUZuFmV3Nq0Bruu4='),url('https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?cs=srgb&dl=pexels-francesco-ungaro-396547.jpg&fm=jpg');
+    background-position: right bottom,left top;
+    background-repeat: no-repeat,repeat;
+    /*background-size: 1000px 800px; /* applies to one only backgroundimage*/
+} 
+.background2 {
+    margin-top: 5%;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/316/573/small_2x/lotus-flower-blue-photo.jpg');
+    /* background-size: 1800px 500px; specifies the width and height of background-image */
+    background-size: auto;
+    color: black;
+    font-size: 40px;
+    background-repeat: no-repeat;
+}
+.box {
+    width: 1050px;
+    height: 820px;
+    background-image: url('https://thumbs.dreamstime.com/b/jersey-cow-calf-sitting-paddock-fence-156369672.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 15px;
+    border: 30px dotted blue;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    padding: 25px;
+}
+.borderbox {
+    background-clip: content-box;
+}

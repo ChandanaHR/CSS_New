@@ -1,0 +1,143 @@
+/* display smooth transitions between two or more specified colors. */
+
+/* Linear gradient: down/up/left/right/diagonal
+    function: linear-gradient(direction,colorstop1,colorstop2...)
+    to right=> left to right
+    to left=> right to left
+    to bottom=>top to bottom
+    to top=>bottom to top
+    diagonal directions: to top right,to bottom right
+                         to bottom left, to top left */
+    /* 0deg=>bottom-top, 90deg → left → right
+    180deg → top → bottom, 270deg → right → left */
+    /* repeating-linear-gradient() function is used to repeat linear gradients: */
+
+/* Radial gradients: 
+    Different size keywords
+    values: closest-side, farthest-side,closest-corner,farthest-corner */
+
+/* Conic gradients: 
+    A conic gradient is a gradient with color transitions 
+    rotated around a center point. 
+    conic-gradient([from angle] [at position] color[degree] color[degree])
+    By default angle is 0deg and position is center*/
+#id1 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(0, 64, 255),pink);
+}
+#id2 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: linear-gradient(red,yellow,blue);
+}
+#id3 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: repeating-linear-gradient(rgb(255, 0, 234),rgb(0, 242, 255) 10%,blue 20%);
+}
+/* A radial gradient is defined by its center. */
+    /* radial-gradient(shape size at position, start-color, ..., last-color); */
+#rd1 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(blue,green,brown);
+}
+#rd2 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(blue 5%,rgb(72, 235, 72) 10%,rgb(42, 147, 165) 15%);
+}
+#rd3 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(circle,blue 5%,rgb(72, 235, 72) 10%,rgb(42, 147, 165) 15%);
+}
+#rd4 {
+    height: 250px;
+    width: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(closest-side at 60% 55%,rgb(68, 255, 0) 15%,rgb(235, 72, 162) 20%,rgb(42, 147, 165) 25%);
+}
+#rd5 {
+    height: 250px;
+    width: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(farthest-side at 60% 55%,blue 5%,rgb(72, 235, 72) 10%,rgb(42, 147, 165) 15%);
+}
+#rd6 {
+    height: 250px;
+    width: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(closest-corner at 60% 55%,blue 5%,rgb(72, 235, 72) 10%,rgb(42, 147, 165) 15%);
+}
+#rd7 {
+    height: 250px;
+    width: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: radial-gradient(farthest-corner at 60% 55%,blue 5%,rgb(72, 235, 72) 10%,rgb(42, 147, 165) 15%);
+}
+#rd8 {
+    height: 250px;
+    /* background-color: purple ; */
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-image: repeating-radial-gradient(blue 5%,rgb(216, 235, 72) 10%,rgb(165, 42, 142) 15%);
+}
+#cg1 {
+    height: 250px;
+    width: 500px;
+    background-image: conic-gradient(blue,green,rgb(71, 228, 252));
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+#cg2 {
+    height: 250px;
+    width: 300px;
+    /* border-radius: 50%; if it wants to look like pie */
+    background-image: conic-gradient(pink 10deg, yellow 45deg, purple 55deg);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+#cg3 {
+    height: 250px;
+    width: 300px;
+    /* border-radius: 50%; if it wants to look like pie */
+    background-image: repeating-conic-gradient(pink 10deg, yellow 45deg, purple 55deg);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

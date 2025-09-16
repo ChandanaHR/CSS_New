@@ -1,0 +1,25 @@
+/* text-shadow with 2 values: horizontal shadow,vertical shadow */
+/* text-shadow with 4 values: horizontal,vertical,blur effect, color */
+/* Multiple shadows: we can add comma separated values */
+/* box-shadow property is used to apply one or more shadows to an element. */
+    /* spread parameter defines the spread radius. A positive value increases the size of the shadow,
+     a negative value decreases the size of the shadow. */
+     /* horizontal,vertical,blur,spread,color */
+h1 {
+    font-size: 70px;
+    color: rgb(213, 213, 231);
+    text-shadow: 2px 3px 10px purple;
+}
+.second {
+    font-size: 90px;
+    color:bisque;
+    text-shadow: 2px 3px 10px purple,3px 5px 15px red;
+}
+div {
+    width: 500px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 50px;
+    box-shadow: 10px 10px 5px 15px purple;
+}

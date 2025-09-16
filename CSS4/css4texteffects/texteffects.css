@@ -1,0 +1,45 @@
+/* text-overflow property specifies how overflowed content that 
+is not displayed should be signaled to the user. */
+    /* values: clip: Simply cuts off the overflowing text, no indicator.
+            ellipses: Shows ... when text overflows. */
+/* word-wrap property allows long words to be able to be broken and wrap onto the next line.
+    If a word is too long to fit within an area, it expands outside:  
+    values: break-word: breaks word if the word doesn't fit inside the container*/
+/* word-break: It specifies how words should break when reaching the end 
+of a line inside a container.
+    values: normal | break-all | keep-all | break-word; */
+    /* break-all: breaks words at any character when needed */
+    /* keep-all:Prevents breaking words within characters. */
+/* writing-mode: used to control the direction in which text and inline content flow
+    horizontal-tb: text flows horizontally from left to right 
+    vertical-rl: Text flows vertically from top to bottom.
+    vertical-lr: Text flows vertically from top to bottom.
+    sideways-lr, sideways-rl */
+
+.test1 {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid black;
+    text-overflow: clip;
+}
+.test2 {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid black;
+    text-overflow: ellipsis;
+}
+.test3 {
+    width:100px;
+    border: 1px solid black;
+    /* word-wrap: break-word; other name: overflow-wrap: ; */
+}
+.test4 {
+    width: 80px;
+    border: 1px solid black;
+    word-break: break-all;
+}
+.test5{
+    writing-mode: vertical-lr;
+}

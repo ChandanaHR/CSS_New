@@ -1,0 +1,26 @@
+.flex1 {
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 200px;
+    border: 8px solid blue;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flexitem {
+    height: 80px;
+    font-size: 40px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    align-self: flex-end;
+    flex-basis: 300px; /* base size of each item */
+}
+.shrink0 {
+    flex-shrink: 3;
+}
+/* items width is 300px+300px+300px =900px but container width is 800px
+900>800 overflow can be seen */
+/* If you use flex-wrap: wrap, items simply move 
+to the next line instead of shrinking. */

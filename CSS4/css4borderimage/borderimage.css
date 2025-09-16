@@ -1,0 +1,27 @@
+/* border-image property, you can define an image to be used as the border around an element. */
+/* border-image-source - defines the path to the image */
+/* border-image-slice - slices the image into 9 regions (corners, edges, center). */
+    /* browser cuts (slices) that photo into 9 regions:
+    corner edge corner 
+    edge  center edge 
+    corner edge corner */
+/* border-image-width: sets border thickness */
+/* border-image-outset: makes the border extend outside the box.
+controls how far the border image extends outside the element’s border box. */
+/* border-image-repeat: controls how edges are filled:
+    values: round, stretch, repeat, space */
+.image1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(6, 166, 46); 
+    text-align: center;
+    color: white;
+    border: 550px solid black;
+    margin-top: 60px;
+    margin-left: 680px;
+    border-image-source: url('https://oshiprint.in/image/cache/catalog/poster/new/mqp073-1100x733.jpeg.webp');
+    border-image-slice: 350;
+    border-image-width: 130px;
+    border-image-outset: 100px;
+    border-image-repeat: repeat;
+}

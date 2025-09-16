@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* border-radius with 4 values: top-left, top-right, bottom-right,bottom-left */
+        /* 3 values: top-left, top-right: bottom-left, bottom-right */
+        /* 2 values: top-left:bottom-right, top-right:bottom-left */
+        /* 1 value: applies to all corners */
+        .rounded1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border-radius: 15px 40px 30px 60px;
+        }
+        .rounded2 {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 75%;
+        }
+        .rounded3 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color: white;
+            text-align: center;
+            border-radius: 15px/50px; /* horizontal radius/vertical radius */
+        }
+    </style>
+</head>
+<body>
+    <div class="rounded1">
+        <h1>Rounded border</h1>
+    </div><br><br>
+    <div class="rounded2">
+        <h1>Rounded border</h1>
+    </div><br><br>
+    <div class="rounded3">
+        <h1>Rounded border</h1>
+    </div><br><br>
+</body>
+</html>

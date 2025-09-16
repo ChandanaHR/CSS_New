@@ -1,0 +1,62 @@
+/* Flexbox (Flexible Box Layout) is a CSS layout module designed to arrange 
+elements in one dimension — row or column */
+/* Flex Container vs Flex Items
+    Flex Container → the parent element (where you set display: flex).
+    Flex Items → the direct children of the flex container. */
+/* Flex container properties
+These control how items are placed inside the container.
+    1. flex-direction=>Defines the direction of items.
+       values: row,row-reverse,column,column-reverse */
+    /* 2. justify-content=> Aligns items horizontally (main axis).
+    horizontal if flex-direction: row, vertical if flex-direction: column
+       values: flex-start, flex-end, center, space-between, space-around, space-evenly */
+       /* 3. align-items=>Aligns items vertically (cross axis).
+       (vertical if flex-direction: row, horizontal if flex-direction: column)
+       values: stretch, flex-start,flex-end, center */
+    /* 4. flex-wrap: Controls wrapping of items suppose if space is not satisfied 
+    flexitems will be displayed on next line
+       values: nowrap, wrap, wrap-reverse */
+    /* 5. align-content: Aligns multiple rows (when wrapping is enabled).
+    values: stretch, flex-start, flex-end, center, space-between, space-around */
+/* Flex-items property: applied to flex items
+    1. flex-grow: Defines how much the item will grow relative to others. */
+    /* 2. flex-shrink: Defines how items shrink when space is tight. */
+    /* 3.flex-basis: Defines the starting size of the item */
+    /* 4. align-self: align items for a single item 
+        values: flex-start, flex-end, center */
+.flexitem {
+    background-color: black;
+    color: white;
+    width: 20%;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.flexcontainer {
+    background-color: blue;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    /* flex-wrap: wrap;  */
+}
+.flexc1 {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.flexitem1 {
+    width: 10%;
+    height: 60px;
+    background-color: blueviolet;
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.flexitem2 {
+    /* flex-grow: 4; */
+    flex-shrink: 1; 
+    flex-basis: 900px;
+}
