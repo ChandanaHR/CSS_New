@@ -1,0 +1,116 @@
+/* An animation lets an element gradually change from one style to another. */
+/* 1.@keyframes is used to define animations.
+It describes how an element should change styles step by step over time. */
+/* Syntax: @keyframes animationname {
+    from {starting style}
+    to {ending styles}
+} */
+ /* 2. animation-name: animation-name property in CSS is used to specify 
+ which @keyframes animation should be applied to an element. */
+/* 3. animation-duration property in CSS defines how long one 
+animation cycle takes to complete. */
+/* 4. animation-delay: animation-delay property in CSS specifies how long to wait 
+before the animation starts after the element is loaded or triggered. */
+/* 5.animation-iteration-count: animation-iteration-count property defines how many times 
+an animation should run. */
+/* 6.animation-direction: animation-direction property defines whether an animation should play 
+forward, backward, or alternate between both on each cycle. */
+/* 7. animation-timing-function: animation-timing-function property defines how the speed 
+of an animation changes over time.
+It controls the rate of change of the animation, not the duration.
+values: linear, ease-in, ease-out, ease-in-out, or custom cubic-bezier curves. */
+/* 8. animation-fill-mode: animation-fill-mode property defines how an element should retain 
+styles before or after the animation runs. By default, after an animation ends, the element returns to its original state.
+animation-fill-mode lets you keep the final or initial state if needed.
+values: none | forwards | backwards | both */
+@keyframes bounce {
+    from {top:0px;}
+    to{top:200px;}
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    margin: 360px;
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 3s;
+    position: relative; 
+    animation-delay: 6s;
+    animation-iteration-count: 3; /*runs 3 times and then stops*/
+    animation-direction: alternate;
+}
+/* animation-direction rules 
+    Works only if the animation repeats (animation-iteration-count > 1 or infinite
+normal (default)	Runs forward every cycle (0% → 100%).
+reverse	            Runs backward every cycle (100% → 0%).
+alternate	        Runs forward on odd cycles, backward on even cycles.
+alternate-reverse	Runs backward on odd cycles, forward on even cycles.*/
+/* @keyframes ball2 {
+      from { transform: translateX(0); }
+      to   { transform: translateX(200px); }
+    } 
+.ball2 {
+    width: 100px;
+    height: 100px;
+    margin: 360px;
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: ball2;
+    animation-duration: 3s;
+    position: relative; /*Because by default position is static top/
+    bottom cannot be applied*/
+    /* animation-delay: 6s; */
+    /* animation-iteration-count: 3; /*runs 3 times and then stops*/
+    /* animation-direction: alternate;
+    animation-timing-function: ease-out; */
+/* }   */
+/* animation-timing-function: 
+linear	        Constant speed from start to finish.
+ease (default)	Starts slow → speeds up → slows down at end.
+ease-in	        Starts slow, then speeds up.
+ease-out	    Starts fast, then slows down.
+ease-in-out	    Slow → fast → slow.
+`steps(n, start	end)`
+cubic-bezier(x1, y1, x2, y2)	Custom curve for precise control. */
+
+/* animation-fill-mode: 
+none (default)
+    Element does not retain any animation styles 
+    before/after. Goes back to original state.
+forwards
+    Keeps the final keyframe styles after the animation ends.
+backwards
+    Applies the first keyframe styles during the animation delay.
+both
+    Applies both backwards and forwards → keeps first keyframe 
+    during delay and last keyframe after finishing. */
+ @keyframes fill {
+    from {background-color: blue;}
+    to {background-color: black;}
+}
+@keyframes color {
+    from {color: black;}
+    to {color: white;}
+}
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 15px; 
+    border: 1px solid black;
+    display: inline-block;
+    animation: fill 3s,color 3s;
+}
+.none {animation-fill-mode: none;}
+.forwards {animation-fill-mode: forwards;}
+.backwards {animation-fill-mode: backwards;
+            animation-delay: 9s;}
+.both {animation-fill-mode: both;
+        animation-delay: 8s;}  
+/* animation shorthand property: 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/

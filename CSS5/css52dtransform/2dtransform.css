@@ -1,0 +1,67 @@
+/* transform property applies a 2D or 3D transformation to an element. This property allows 
+you to rotate, scale, move, and skew elements. */
+
+.outer {
+    width: 400px;
+    height: 300px;
+    background-color: blueviolet;
+}
+/* 1)translate(x,y):Moves (shifts) an element from its current position.
+    translateX(px or %): moves horizontally.
+    translateY(px or %): moves vertically. */
+.translate {
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    /* transform: translate(-20px,100px); */
+    transform: translateY(50px);
+}
+
+/* 2)rotate() function rotates an element clockwise or 
+counter-clockwise according to a given degree. */
+.rotate {
+    width:400px;
+    height:200px;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    transform: rotate(400deg);
+}
+
+/* 3)scale() function increases or decreases the size of an element
+    scaleX(value) → scales horizontally. decreases the width of an element
+    scaleY(value) → scales vertically.decreases the height of an element */
+.scale {
+    width:400px;
+    height:200px;
+    background-color: rgb(12, 148, 139);
+    color: white;
+    font-size: 20px;
+    transform: scale(1,0.9); 
+}
+
+/* 4) skew(x-angle, y-angle)
+    Skews (slants) an element along X and/or Y axis.
+        skewX(angle) → skew only horizontally.
+        skewY(angle) → skew only vertically. */
+.skew {
+    width:400px;
+    height:200px;
+    background-color: rgb(85, 241, 33);
+    color: white;
+    font-size: 20px;
+    transform: skew(30deg, 40deg); 
+}
+
+/* 5)matrix() function combines all the 2D transform functions into one.
+    matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+.matrix {
+    width:400px;
+    height:200px;
+    background-color: rgb(248, 223, 62);
+    color: white;
+    font-size: 20px;
+    transform: matrix(1, 0.5, -0.5, 1, 30, 40); 
+}

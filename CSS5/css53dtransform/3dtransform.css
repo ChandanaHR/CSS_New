@@ -1,0 +1,62 @@
+/* CSS 2D transforms work on the X and Y axes, 
+CSS 3D transforms extend this to include the Z axis */
+
+/* 1.translate3d(x, y, z)
+Moves the element in 3D space.
+    translateX(n) → move along X-axis.
+    translateY(n) → move along Y-axis.
+    translateZ(n) → move forward/backward (Z-axis). */
+/* If 3d wants to work for the parent class we need to give perspective property */
+/* If 3d wants to work for the child class we need to give transform-style: 
+preserve-3d  */
+.outer {
+    width:400px;
+    height:400px;
+    background-color: black;
+    color: white;
+    perspective: 1000px;
+}
+.inner {
+    width:300px;
+    height:300px;
+    background-color: blue;
+    color:white;
+    font-size: 40px;
+    transform-style: preserve-3d;
+    transform: translate3d(100px,50px,300px);
+}
+/* 2.scale3d(x, y, z)
+    Scales the element in 3D space.
+    scaleX(n), scaleY(n), scaleZ(n) also available. */
+.inner1 {
+    width:300px;
+    height:300px;
+    background-color: blue;
+    color:white;
+    font-size: 40px;
+    transform-style: preserve-3d;
+    transform: scale3d(1,1,0.5);
+}
+/* 3.rotate3d(x, y, z, angle)
+Rotates the element around an arbitrary 3D axis.
+(x, y, z) → axis vector (0 or 1 for each).
+Angle in deg, rad, etc. */
+/* Shortcuts: rotateX(angle), rotateY(angle), rotateZ(angle). */
+.inner2 {
+    width:300px;
+    height:300px;
+    background-color: blue;
+    color:white;
+    font-size: 40px;
+    transform-style: preserve-3d;
+    transform: rotate3d(1,0,1,60deg);
+}
+.inner3 {
+    width:300px;
+    height:300px;
+    background-color: blue;
+    color:white;
+    font-size: 40px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);
+}

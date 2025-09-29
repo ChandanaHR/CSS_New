@@ -1,0 +1,96 @@
+/* transition is a way to smoothly animate changes from one style (state) to 
+another over a given duration. */
+/* selector {
+    transition: property duration timing-function delay;
+} */
+/* property → The CSS property you want to animate (e.g., width, color, all)
+duration → How long the transition takes (s or ms).
+timing-function → How the speed progresses (linear, ease, ease-in, ease-out, ease-in-out
+delay → How long to wait before starting the transition. */
+/* .trans1 {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    transition: width 3s, height 5s;
+}
+.trans1:hover {
+    width: 100px;
+    height: 100px;
+} */
+/* 1. transition-property in CSS specifies which CSS property 
+(or properties) should animate when they change. like width,height.. */
+.trans2 {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    transition-property: width;
+}
+.trans2:hover {
+    width: 400px;
+    height: 200px;
+    background-color: blue; /*background will change instantly (no animation)*/
+}
+/* 2.transition-delay in CSS specifies how long to wait before a 
+transition starts once a property change happens. */
+.trans3 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(43, 208, 226);
+    transition-property: width,height;
+    transition-delay: 6s;
+}
+.trans3:hover {
+    width: 400px;
+    height:400px;
+    background-color: rgb(13, 255, 0); /*background will change instantly (no animation)*/
+}
+/* 3.transition-duration defines how long a transition 
+animation should take to complete once it starts. */
+.trans4 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(166, 235, 7);
+    transition-property: width,height;
+    transition-delay: 6s;
+    transition-duration: 7s;
+}
+.trans4:hover {
+    width: 400px;
+    height:400px;
+    background-color: rgb(255, 68, 0); /*background will change instantly (no animation)*/
+}
+/* 4.transition-timing-function: It defines how the speed of a transition changes over its duration — 
+in other words, the acceleration curve of the animation. */
+/* values: linear → constant speed, no acceleration.
+        ease (default) → starts slow → speeds up → ends slow.
+        ease-in → starts slow, then speeds up.
+        ease-out → starts fast, then slows down.
+        ease-in-out → starts slow → speeds up → slows down at the end.
+        cubic-bezier(x1,y1,x2,y2) → custom curve for precise control. values are between 0 and 1
+        steps(n, start|end) → jumps in steps instead of smooth movement. */
+.trans5 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(235, 7, 113);
+    transition-property: width,height;
+    /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    transition-delay: 6s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 7s;
+}
+ .trans5:hover {
+    width: 400px;
+    height:400px;
+    background-color: rgb(38, 6, 145); /*background will change instantly (no animation)*/
+}  
+/* transition with transform effects */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(221, 255, 0);
+    margin: 40px;
+    transition: transform 3s;
+}
+ .box:hover{
+    transform: rotate(120deg) scale(1.5) translate(50px ,0);
+}

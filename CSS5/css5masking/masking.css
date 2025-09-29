@@ -1,0 +1,34 @@
+/* With CSS masking you create a mask layer to place over an 
+element to partially or fully hide portions of the element.
+masking is a technique used to control the visibility of an element 
+(or parts of it) by applying a mask image or shape. */
+
+/*1. mask-image: Defines the mask image (can be an image, gradient, or SVG). */
+/*2. mask-mode: property in CSS specifies how the mask image determines 
+which parts of the element are visible 
+   2a mask-mode: alpha
+    Uses the alpha channel (transparency) of the mask image.
+    Opaque areas (alpha = 1) → show the element.
+    Transparent areas (alpha = 0) → hide the element.
+    2b mask-mode: luminance
+        Uses the brightness (luminance) of the mask image instead of alpha.
+        White/bright areas → fully visible.
+        Black/dark areas → fully hidden.
+        alpha: Opaque areas → visible, Transparent areas → hidden
+        luminance: White/bright areas → visible, Black/dark areas → hidden*/
+/* 3.mask-repeat → Repeats the mask image (repeat, no-repeat, space, round). */
+/* 4. mask-position : property in CSS controls where the mask image is placed inside the element. */
+.maskedbox {
+    width:1000px;
+    height:1000px;
+    border: 20px solid black;
+    overflow: hidden;
+}
+.maskedbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: url('https://images.vexels.com/media/users/3/139197/isolated/preview/5aecde8d1d89d062d6c2464aaa1213d8-hexagon-shape.png');
+    mask-mode: alpha;
+    mask-repeat: round;
+} 

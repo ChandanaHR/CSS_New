@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>object-fit Example</title>
+  <style>
+    .box {
+      width: 250px;
+      height: 150px;
+      border: 2px solid black;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .fill img {
+      object-fit: fill;
+    }
+
+    .contain img {
+      object-fit: contain;
+    }
+
+    .cover img {
+      object-fit: cover;
+    }
+
+    .none img {
+      object-fit: none;
+    }
+
+    .scaledown img {
+      object-fit: scale-down;
+    }
+  </style>
+</head>
+<body>
+  <h2>object-fit: fill</h2>
+  <div class="box fill">
+    <img src="https://picsum.photos/id/237/400/300" alt="dog">
+  </div>
+
+  <h2>object-fit: contain</h2>
+  <div class="box contain">
+    <img src="https://picsum.photos/id/237/400/300" alt="dog">
+  </div>
+
+  <h2>object-fit: cover</h2>
+  <div class="box cover">
+    <img src="https://picsum.photos/id/237/400/300" alt="dog">
+  </div>
+
+  <h2>object-fit: none</h2>
+  <div class="box none">
+    <img src="https://picsum.photos/id/237/400/300" alt="dog">
+  </div>
+
+  <h2>object-fit: scale-down</h2>
+  <div class="box scaledown">
+    <img src="https://picsum.photos/id/237/400/300" alt="dog">
+  </div>
+
+  <!-- contain: 
+  Always scales the image down (or up if smaller) so the whole image fits inside the container.
+  Maintains aspect ratio. -->
+  <!-- scale-down: 
+  Works like a conditional version of contain.
+  Chooses the smaller result between:
+    none (original size, cropped if larger), and
+    contain (scaled to fit).
+  If the image is larger than the box, it behaves like contain (scales down).
+  If the image is smaller than the box, it behaves like none (does not stretch up). -->
+</body>
+</html>
